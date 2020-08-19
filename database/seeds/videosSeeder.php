@@ -13,9 +13,7 @@ class videosSeeder extends Seeder
     public function run()
     {
         Video::create([
-            'name' => 'test.mp4',
-            'poster' => 'fortnite.png',
-            'ID_jeu' => '1',
+
         ]);
     }
 }

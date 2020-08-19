@@ -18,6 +18,7 @@ class CreateVideos extends Migration
             $table->string('name');
             $table->string('poster');
             $table->foreignId('ID_jeu');
+            $table->foreignId('ID_user');
         });
     }
 

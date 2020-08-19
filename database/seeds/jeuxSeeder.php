@@ -21,8 +21,8 @@ class jeuxSeeder extends Seeder
             'image' => 'apex.png',
         ]);
         Jeu::create([
-            'nameG' => 'Lol',
-            'image' => 'lol.png',
+            'nameG' => 'Overwatch',
+            'image' => 'ow.png',
         ]);
         Jeu::create([
             'nameG' => 'Valorant',
