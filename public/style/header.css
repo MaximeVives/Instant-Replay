@@ -1,0 +1,182 @@
+
+
+/*CSS Navigation*/
+
+/*Parent -> Tout le block en-tete*/
+header{
+    height: 90px;
+
+}
+
+/*Nav --> Parent contenant image + lien*/
+nav{
+    background-color: var(--colorTwoSecond);
+    display: grid;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: .5s;
+}
+
+nav:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/*Partie Logo*/
+.logo{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    height: 90px;
+}
+.logo img{
+    margin: 10px 0px 10px 50px;
+    height: 90%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.05) rotate(-3deg);
+}
+
+/*Partie Lien*/
+.link{
+    height: 100%;
+}
+
+.link ul{
+    display: flex;
+    float: right;
+    height: 100%;
+    list-style: none;
+    margin: 0 50px 0 0;
+}
+.link ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    transition: .5s;
+}
+
+.link ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    transition: .5s;
+}
+
+
+nav:hover .link ul li a{color: var(--colorOneMain);}
+nav .link ul li:hover{background-color: var(--colorTwoSecond);}
+nav .link ul li:hover a{color: white;}
+
+
+#toogle{display: none}
+
+.topnav {
+    display: none;
+    overflow: hidden;
+}
+
+.topnav a {
+    text-align: center;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: #656565;
+}
+
+
+.topnav .icon, .link .topnavBis li.icon{
+    display: none;
+}
+
+
+@media screen and (max-width: 700px) {
+    nav{position: absolute;}
+    .link .topnavBis li{display: none;}
+    .link .topnavBis li.icon{
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .link .topnavBis li.icon a i{
+        font-size: 32px;
+    }
+
+    .topnav{
+        display: inherit;
+        background-color: var(--colorTwoMain);
+    }
+    .topnav.responsive {
+        position: relative;
+        margin-top: 90px;
+        background-color: var(--colorOneMain);
+    }
+    .topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive li {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .topnav a {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .accueil .card-all{
+        grid-template-columns: 50% 50%!important;
+    }
+    .accueil .card-all .card-container{
+        margin: 30px!important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .accueil .card-all{
+        grid-template-columns: 100%!important;
+    }
+    .accueil .card-all .card-container{
+        margin: 30px!important;
+    }
+}
+

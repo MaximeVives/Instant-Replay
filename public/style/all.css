@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+    /*overflow: hidden;*/
+}
+
+:root {
+    --colorOneMain: #9D2A57;
+    --colorOneSecond: rgba(157, 42, 87, 0.50);
+    --colorTwoMain: #A64635;
+    --colorTwoSecond: rgba(166, 70, 53, 0.25);
+    --colorTwoThird: rgba(166, 70, 53, 0.5);
+
+}
+
+body{
+    /*background-color: var(--colorTwoMain);*/
+    background-color: var(--colorTwoMain);
+}

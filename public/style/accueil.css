@@ -1,0 +1,97 @@
+/* Contenaire de toute l'accueil */
+.accueil{
+    padding-top: 80px;
+    background-color: var(--colorTwoMain);
+    min-height: 100vh;
+}
+
+/*Partie Logo plus phrase d'accroche */
+.accueil .guidelines{
+    padding: 100px 0px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil .guidelines img{
+    height: 350px;
+}
+
+.accueil .guidelines p{
+    text-align: center;
+    width: 75%;
+    padding-top: 50px;
+    color: white;
+    font-size: 40px;
+}
+
+.accueil .guidelines .accent:before{
+    content: '';
+    overflow: hidden;
+    animation: rideau 10s infinite 0s;
+}
+
+
+@keyframes rideau{
+    0%{
+        content: 'épique';
+    }
+
+    10%{
+        color: var(--colorTwoMain);
+    }
+
+    25%{
+        color: white;
+        content: 'légendaire';
+    }
+
+    35%{
+        color: var(--colorTwoMain);
+    }
+
+    50%{
+        color: white;
+        content: 'mémorable';
+    }
+
+    60%{
+        color: var(--colorTwoMain);
+    }
+
+    75%{
+        color: white;
+        content: 'incroyable';
+    }
+
+    85%{
+        color: var(--colorTwoMain);
+    }
+    100%{
+        color: white;
+        content: 'épique';
+    }
+}
+
+/*Partie CARD*/
+.accueil .card-all{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.accueil .card-all .card-container{
+    height: 200px;
+    margin: 0px 30px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.accueil .card-all .card-container:nth-child(1){background-image: url("../image/fortnite/fortnite.png");}
+.accueil .card-all .card-container:nth-child(2){background-image: url("../image/apex/apex.png");}
+.accueil .card-all .card-container:nth-child(3){background-image: url("../image/overwatch/ow2.png");}
+.accueil .card-all .card-container:nth-child(4){background-image: url("../image/valorant/valorant.png");}

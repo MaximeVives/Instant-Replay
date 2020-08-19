@@ -1,0 +1,62 @@
+.spacer{
+    margin: 110px auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacer .video-container{
+    width: 450px;
+    height: 250px;
+    margin: 25px 25px;
+    position: relative;
+}
+
+.spacer .video-container video{
+    width: 100%;
+    height: 100%;
+}
+
+.spacer .video-container video[poster]{
+    object-fit: cover;
+}
+
+.spacer .video-container .delete{
+    position: absolute;
+    z-index: 10;
+    top: -20px;
+    right: -20px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.spacer .video-container .delete img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1470px){
+    .spacer{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .spacer{
+        grid-template-columns: auto;
+    }
+}
+
+
+
+
+
+form{
+    margin: 110px 0;
+}

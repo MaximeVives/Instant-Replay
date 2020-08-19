@@ -1,0 +1,65 @@
+.container{
+    margin: 150px 0;
+}
+
+.container .justify-content-center, .row {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--colorOneMain);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.container .justify-content-center{
+    /*border: 2px solid #000;*/
+}
+
+h2{
+    border-bottom: 2px solid #fff;
+}
+
+.card-header{
+    margin: 20px 0;
+}
+
+.form-group{
+    margin: 10px 0;
+}
+
+.bottom{
+    margin: 40px 0 0;
+}
+
+.col-md-6 input{
+    margin: 5px 0;
+    width: 250px;
+    height: 25px;
+}
+
+.btn{
+    border: 2px solid var(--colorTwoMain);
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background: var(--colorTwoThird);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: var(--colorTwoMain);
+}
+
+.btn-margin{
+    margin: 0 0 20px;
+}
+
+.offset-md-4{
+    display: flex;
+    flex-direction: column;
+}
